@@ -1,169 +1,200 @@
-@import url('https://fonts.googleapis.com/css2?family=Ruda&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ruda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: black !important;
+body {
+  background-color: black !important;
 }
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
+}
+.pizza {
+  top: 70px;
+  width: 100%;
+}
+ul > a {
+  text-decoration: none;
+  color: white;
+}
+ul > a:hover {
+  text-decoration: none;
+  color: white;
+}
 
+li {
+  margin: auto 20px;
 }
-.pizza{
-    top: 70px;
+
+.item img{
     width: 100%;
-}
-ul>a{
-        text-decoration: none;
-            color: white;
-}
-ul>a:hover {
-    text-decoration: none;
-    color: white;
-}
-li{
-    margin:auto 20px;
-}
-.my-nav{
-    position: fixed;
-    width: 100%;
-    background-color: black;
-    color: white;
-    z-index: 9999;
-}
-nav >a{
-    text-decoration: none;
-    color: white;
-}
-nav>a:hover{
-    text-decoration: none;
-    color: white;
-}
-.text{
-    position: absolute;
-    top: 240px;
-    left: 116px;
-}
-.heading{
-font-family: Quattrocento;
-    font-size: 101px;
-    font-weight: 700;
-    line-height: 109px;
-    letter-spacing: 0.09em;
-    text-align: center;
-    color: white;
-}
-.text>pre{
-    font-family: 'Ruda', sans-serif;
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 40px;
-    letter-spacing: 0.09em;
-    text-align: left;
-    color: #FFFFFF;
-}
-.find-us-text{
-    font-family: Ruda;
-font-size: 25px;
-font-weight: 400;
-line-height: 40px;
-letter-spacing: 0.09em;
-text-align: left;
-
-}
-.about-us{
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-.about-container{
-    margin-top: 4rem;
-}
-.about-us-text, .menu-text{
-    font-family: Ruda;
-        font-size: 25px;
-        font-weight: 400;
-        line-height: 40px;
-        letter-spacing: 0.09em;
-        text-align: left;
-}
-.Pizza-heading{
-    font-family: Ruda;
-        font-size: 28px;
-        font-weight: 400;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #F2C94C;
-}
-.Pizza-details{
-    font-family: Ruda;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 40px;
-        letter-spacing: 0.09em;
-        text-align: left;
+    height: 100%;
+    
 }
 
-.contact-us-container{
-    display: flex;
-    justify-content: space-between;
+.g-container {
+  display: grid;
+  gap: 10px;
+  align-items: stretch;
+  grid-template-columns: 3.3fr 1.1fr 1.7fr;
+  align-items: center;
+  margin: 100px auto;
 }
-.email-number{
-    display: flex;
-    flex-flow: column;
-}
-.about-us>h4, .carousel .container h4{
-    padding-top: 90px;
-    font-family: Quattrocento;
-    font-size: 60px;
-    font-weight: 400;
-    letter-spacing: 0em;
-}
-.menu, .find-us, .contact-us, .carousel{
-    padding-top: 50px;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-.menu .container h4{
-        padding-top: 40px;
-            font-family: Quattrocento;
-            font-size: 60px;
-            font-weight: 400;
-            letter-spacing: 0em;
-}
-.find-us .container h4{
-            padding-top: 40px;
-            font-family: Quattrocento;
-            font-size: 60px;
-            font-weight: 400;
-            letter-spacing: 0em;
-}
-.address{
-    display: flex;
-    font-family: Ruda;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 40px;
-        letter-spacing: 0.09em;
-        text-align: left;
-        align-items: center;
-}
-.address > i{
-   font-size: 30px;
-   margin-right: 40px;
-}
-.email-number{
+@media(max-width:768px) {
+    .g-container{
         display: flex;
-            font-family: Ruda;
-            flex-wrap: nowrap;
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 40px;
-            letter-spacing: 0.09em;
-            text-align: left;
-            align-items: center;
+        margin: 60px;
+        flex-direction: column;
+    }
+    .item img{
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+}
+}
+.my-nav {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  color: white;
+  z-index: 9999;
+}
+nav > a {
+  text-decoration: none;
+  color: white;
+}
+nav > a:hover {
+  text-decoration: none;
+  color: white;
+}
+.text {
+  position: absolute;
+  top: 240px;
+  left: 116px;
+}
+.heading {
+  font-family: Quattrocento;
+  font-size: 101px;
+  font-weight: 700;
+  line-height: 109px;
+  letter-spacing: 0.09em;
+  text-align: center;
+  color: white;
+}
+.text > pre {
+  font-family: "Ruda", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.09em;
+  text-align: left;
+  color: #ffffff;
+}
+.find-us-text {
+  font-family: Ruda;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.09em;
+  text-align: left;
+}
+.about-us {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.about-container {
+  margin-top: 4rem;
+}
+.about-us-text,
+.menu-text {
+  font-family: Ruda;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.09em;
+  text-align: left;
+}
+.Pizza-heading {
+  font-family: Ruda;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f2c94c;
+}
+.Pizza-details {
+  font-family: Ruda;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.09em;
+  text-align: left;
+}
+
+.contact-us-container {
+  display: flex;
+  justify-content: space-between;
+}
+.email-number {
+  display: flex;
+  flex-flow: column;
+}
+.about-us > h4,
+.carousel .container h4, .container>h4{
+  padding-top: 90px;
+  font-family: Quattrocento;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+.menu,
+.find-us,
+.contact-us,
+.carousel, .gallary {
+  padding-top: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.menu .container h4 {
+  padding-top: 40px;
+  font-family: Quattrocento;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+.find-us .container h4 {
+  padding-top: 40px;
+  font-family: Quattrocento;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+.address {
+  display: flex;
+  font-family: Ruda;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.09em;
+  text-align: left;
+  align-items: center;
+}
+.address > i {
+  font-size: 30px;
+  margin-right: 40px;
+}
+.email-number {
+  display: flex;
+  font-family: Ruda;
+  flex-wrap: nowrap;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.09em;
+  text-align: left;
+  align-items: center;
 }
